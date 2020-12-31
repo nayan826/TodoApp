@@ -37,6 +37,8 @@ const Createpost = (props) => {
       type: "ADD_POST",
       data,
     });
+    setBody("");
+    setTitle("");
   };
   return (
     <div>

@@ -15,7 +15,7 @@ const postReducer = (state = initialState, action) => {
         ...{
           Allposts: state.Allposts.filter((post) => post.id !== action.id),
           currentPost:
-            state.currentPost[0].id === action.id ? {} : state.currentPost,
+          state.currentPost.length > 0 && state.currentPost[0].id === action.id ? {} : state.currentPost,
         },
       };
     case "SELECTED_POST":

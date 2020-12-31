@@ -13,7 +13,7 @@ const Post = (props) => {
   return (
     <div>
       <List component="nav" aria-label="post">
-        <ListItem button onClick={() => props.dispatch({ type: "SELECTED_POST", id: props.post.id })}>
+        <ListItem button divider={true} onClick={() => props.dispatch({ type: "SELECTED_POST", id: props.post.id })}>
           <ListItemText
             primary={props.post.title}
             secondary={props.post.body}

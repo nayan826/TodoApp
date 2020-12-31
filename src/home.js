@@ -17,10 +17,10 @@ const Home = () => {
       </AppBar>
       <Box m={3}>
         <Grid container>
-          <Grid item xs={3}>
+          <Grid className="elem" item md={3}>
             <Allpost />
           </Grid>
-          <Grid item xs={9}>
+          <Grid className="elem" item md={9}>
             <CreatePost />
           </Grid>
         </Grid>
